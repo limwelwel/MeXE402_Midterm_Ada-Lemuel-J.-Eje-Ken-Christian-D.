@@ -7,11 +7,13 @@
 <h1 align="center"> Linear Regression and Logistic Regression </h1> 
 <br>
 
-Introduction: Overview of Linear and Logistic Regression.
+## Introduction: Overview of Linear and Logistic Regression.
+<p align="justify"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAAAA
 
-Dataset Description: Details about the datasets used.
+## Dataset Description: Details about the datasets used.
 
-Project Objectives: What you aim to achieve with your analyses.
+## Project Objectives: What you aim to achieve with your analyses.
 
 
 
