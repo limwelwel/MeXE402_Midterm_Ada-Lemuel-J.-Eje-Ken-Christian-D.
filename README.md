@@ -8,13 +8,12 @@
 <br>
 
 ## Introduction: Overview of Linear and Logistic Regression.
-<p align="justify"> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAAAA
 
 ## Dataset Description: Details about the datasets used.
 
 ## Project Objectives: What you aim to achieve with your analyses.
-
+<p align="justify"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAAAA
 
 
 
