@@ -37,7 +37,7 @@ This dataset is commonly used for evaluating classification algorithms, especial
 - **Interpretation:**  
    - Interpret the significance of the model’s coefficients and explain how well the model predicts sales. Discuss the impact of key features on the outcome.
  
-### Logistic Regression Analysis: Breast Cancer Wisconsin Dataset
+### Logistic Regression Analysis: Breast Cancer Data
  **Objective:**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The goal is to perform a logistic regression analysis to classify whether a breast tumor is benign or malignant, using features from the Breast Cancer Wisconsin dataset.
 
