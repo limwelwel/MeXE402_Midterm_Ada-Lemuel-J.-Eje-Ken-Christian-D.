@@ -8,7 +8,77 @@
 <br>
 
 ## Introduction: Overview of Linear and Logistic Regression.
+### Linear Regression
 
+ 
+
+#### Overview
+
+Linear regression is a statistical technique used to model the relationship between a dependent variable (target) and one or more independent variables (features). The goal is to find a linear equation that best describes the observed data. It is widely used for prediction, understanding relationships, and measuring the influence of variables.
+
+ 
+
+#### Key Concepts
+
+- **Dependent Variable (y)**: The outcome being predicted.
+
+- **Independent Variables (x)**: The input features used to predict the outcome.
+
+- **Linear Equation**: The model is represented as \( y = \beta_0 + \beta_1x + \epsilon \).
+
+  - \( \beta_0 \): The intercept, the value of \( y \) when \( x = 0 \).
+
+  - \( \beta_1 \): The slope, indicating how much \( y \) changes for each unit change in \( x \).
+
+  - \( \epsilon \): The error term representing the influence of unobserved factors.
+
+- **Training Data**: The dataset used to fit the model and estimate the coefficients \( \beta_0 \) and \( \beta_1 \).
+
+ 
+
+#### Types of Linear Regression
+
+- **Simple Linear Regression**: Involves a single independent variable.
+
+- **Multiple Linear Regression**: Involves multiple independent variables.
+
+ 
+
+#### Assumptions
+
+- **Linearity**: The relationship between variables is linear.
+
+- **Independence**: Error terms are independent.
+
+- **Normality**: Error terms follow a normal distribution.
+
+- **Homoscedasticity**: The variance of error terms remains constant.
+
+ 
+
+#### Evaluation Metrics
+
+- **R-squared**: Measures the proportion of variance in the dependent variable explained by the model.
+
+- **Mean Squared Error (MSE)**: The average squared difference between predicted and actual values.
+
+- **Residuals**: The differences between observed and predicted values.
+
+ 
+
+#### Applications
+
+- **Prediction**: Forecasting future outcomes of the dependent variable.
+
+- **Feature Importance**: Identifying the most influential features.
+
+- **Hypothesis Testing**: Exploring the relationships between variables.
+
+ 
+
+#### Implementation
+
+Linear regression can be implemented using various libraries in Python, R, and other languages, such as scikit-learn, statsmodels, and R's `lm()` function.
 ## Dataset Description
 ### Linear Regression: Sales Dataset
 <p align="justify">
