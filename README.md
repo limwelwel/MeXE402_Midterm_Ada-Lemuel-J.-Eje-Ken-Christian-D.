@@ -79,6 +79,72 @@ Linear regression is a statistical technique used to model the relationship betw
 #### Implementation
 
 Linear regression can be implemented using various libraries in Python, R, and other languages, such as scikit-learn, statsmodels, and R's `lm()` function.
+
+### Logistic Regression
+
+ 
+
+#### Overview
+
+Logistic regression is a statistical method for classification tasks, used to predict the probability of a categorical outcome (typically binary). It uses a sigmoid function to map input features to probabilities between 0 and 1, and forms a linear decision boundary to separate classes.
+
+ 
+
+#### Key Concepts
+
+- **Sigmoid Function**: \( \sigma(z) = \frac{1}{1 + e^{-z}} \), which converts continuous values to probabilities.
+
+- **Decision Boundary**: A line or hyperplane that separates different classes.
+
+- **Logistic Model**: The probability of class 1 given the input features is represented as \( P(y = 1 | x) = \sigma(\beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_px_p) \).
+
+  - \( \beta_0 \): The intercept.
+
+  - \( \beta_p \): Coefficients for each input feature.
+
+ 
+
+#### Training
+
+The goal is to find the optimal parameters \( \beta_0, \beta_1, ..., \beta_p \) that best fit the training data. Logistic regression typically uses optimization techniques like gradient descent to minimize the cost function, often cross-entropy loss.
+
+ 
+
+#### Evaluation Metrics
+
+- **Accuracy**: The proportion of correct predictions.
+
+- **Precision**: The ratio of true positives to predicted positives.
+
+- **Recall**: The ratio of true positives to actual positives.
+
+- **F1-score**: The harmonic mean of precision and recall.
+
+- **ROC Curve**: A graph that shows model performance at different thresholds.
+
+- **AUC (Area Under the ROC Curve)**: A single value summarizing model performance.
+
+ 
+
+#### Applications
+
+- **Spam Detection**: Identifying whether an email is spam.
+
+- **Fraud Detection**: Detecting fraudulent activities.
+
+- **Customer Churn Prediction**: Predicting if a customer will leave a service.
+
+- **Medical Diagnosis**: Assessing the risk of disease.
+
+- **Image Classification**: Identifying objects in images.
+
+ 
+
+#### Implementation
+
+Logistic regression can be implemented in most machine learning libraries, such as scikit-learn, TensorFlow, and PyTorch.
+
+
 ## Dataset Description
 ### Linear Regression: Sales Dataset
 <p align="justify">
