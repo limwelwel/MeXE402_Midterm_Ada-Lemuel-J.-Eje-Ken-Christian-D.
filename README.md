@@ -5,18 +5,15 @@
 <h3 align="center">BACHELOR OF SCIENCE IN MECHATRONICS ENGINEERING</h3>
 <h3 align="center">MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning: Midterm: Pair-Based Project</h3>
 <h1 align="center"> Linear Regression and Logistic Regression </h1> 
-<br>
-
-## Introduction: Overview of Linear and Logistic Regression.
+<br> 
+  
+## Introduction
 ### Linear Regression
 
- 
-
 #### Overview
+<p align="justify"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linear regression is a statistical technique used to model the relationship between a dependent variable (target) and one or more independent variables (features). The goal is to find a linear equation that best describes the observed data. It is widely used for prediction, understanding relationships, and measuring the influence of variables.
 
-Linear regression is a statistical technique used to model the relationship between a dependent variable (target) and one or more independent variables (features). The goal is to find a linear equation that best describes the observed data. It is widely used for prediction, understanding relationships, and measuring the influence of variables.
-
- 
 
 #### Key Concepts
 
@@ -34,7 +31,6 @@ Linear regression is a statistical technique used to model the relationship betw
 
 - **Training Data**: The dataset used to fit the model and estimate the coefficients \( \beta_0 \) and \( \beta_1 \).
 
- 
 
 #### Types of Linear Regression
 
@@ -42,7 +38,6 @@ Linear regression is a statistical technique used to model the relationship betw
 
 - **Multiple Linear Regression**: Involves multiple independent variables.
 
- 
 
 #### Assumptions
 
@@ -54,7 +49,6 @@ Linear regression is a statistical technique used to model the relationship betw
 
 - **Homoscedasticity**: The variance of error terms remains constant.
 
- 
 
 #### Evaluation Metrics
 
@@ -64,7 +58,6 @@ Linear regression is a statistical technique used to model the relationship betw
 
 - **Residuals**: The differences between observed and predicted values.
 
- 
 
 #### Applications
 
@@ -74,21 +67,17 @@ Linear regression is a statistical technique used to model the relationship betw
 
 - **Hypothesis Testing**: Exploring the relationships between variables.
 
- 
 
 #### Implementation
 
-Linear regression can be implemented using various libraries in Python, R, and other languages, such as scikit-learn, statsmodels, and R's `lm()` function.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linear regression can be implemented using various libraries in Python, R, and other languages, such as scikit-learn, statsmodels, and R's `lm()` function.
 
 ### Logistic Regression
 
- 
-
 #### Overview
+<p align="justify"> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Logistic regression is a statistical method for classification tasks, used to predict the probability of a categorical outcome (typically binary). It uses a sigmoid function to map input features to probabilities between 0 and 1, and forms a linear decision boundary to separate classes.
 
-Logistic regression is a statistical method for classification tasks, used to predict the probability of a categorical outcome (typically binary). It uses a sigmoid function to map input features to probabilities between 0 and 1, and forms a linear decision boundary to separate classes.
-
- 
 
 #### Key Concepts
 
@@ -102,13 +91,11 @@ Logistic regression is a statistical method for classification tasks, used to pr
 
   - \( \beta_p \): Coefficients for each input feature.
 
- 
 
 #### Training
 
-The goal is to find the optimal parameters \( \beta_0, \beta_1, ..., \beta_p \) that best fit the training data. Logistic regression typically uses optimization techniques like gradient descent to minimize the cost function, often cross-entropy loss.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The goal is to find the optimal parameters \( \beta_0, \beta_1, ..., \beta_p \) that best fit the training data. Logistic regression typically uses optimization techniques like gradient descent to minimize the cost function, often cross-entropy loss.
 
- 
 
 #### Evaluation Metrics
 
@@ -124,7 +111,6 @@ The goal is to find the optimal parameters \( \beta_0, \beta_1, ..., \beta_p \) 
 
 - **AUC (Area Under the ROC Curve)**: A single value summarizing model performance.
 
- 
 
 #### Applications
 
@@ -142,7 +128,7 @@ The goal is to find the optimal parameters \( \beta_0, \beta_1, ..., \beta_p \) 
 
 #### Implementation
 
-Logistic regression can be implemented in most machine learning libraries, such as scikit-learn, TensorFlow, and PyTorch.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Logistic regression can be implemented in most machine learning libraries, such as scikit-learn, TensorFlow, and PyTorch.
 
 
 ## Dataset Description
