@@ -1,7 +1,7 @@
 <h3 align="center">CATEGORICAL TO NUMERICAL </h3>
 <div align="center">
   
-|                  STATUS       | PRODUCT LINE              | WHEEL SIZE          | TERRITORY          |
+|                  STATUS       | PRODUCT LINE              | DEAL SIZE           | TERRITORY          |
 | :--:                          |  :---:                    |  :---:              |  :---:             |
 | SHIPPED - 1                   |  MOTORCYCLES - 1          |  SMALL - 1          |  NA - 1            |
 | IN PROCESS - 2                |   CLASSIC CARS - 2        |  MEDIUM - 2         |  EMEA - 2          |
