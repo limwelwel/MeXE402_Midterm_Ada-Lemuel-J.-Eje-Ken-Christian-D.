@@ -176,12 +176,6 @@ This dataset is commonly used for evaluating classification algorithms, especial
    - Discuss the logistic regression model's ability to classify tumors as benign or malignant, and assess the importance of features in influencing the outcome.
 
 
-
-<p align="justify"> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AAAAA
-
-
-
 <hr>
 <p align="center">
   <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
