@@ -180,3 +180,307 @@ This dataset is commonly used for evaluating classification algorithms, especial
 <hr>
 <p align="center">
   <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
+DRAFT ELECTIVES
+
+IV. DOCUMENTATION
+
+
+METHODOLOGY
+
+
+### Linear Regression
+
+This performs a linear regression analysis on a sales dataset. Here's a breakdown of each step:
+
+
+1. **Data Loading and Preview**:
+
+   ```python
+
+   import pandas as pd
+
+   dataset = pd.read_csv('sales data.csv')
+
+   dataset.head(10)
+
+   ```
+
+   - Imports the Pandas library and loads a CSV file named "sales data.csv" into a DataFrame named `dataset`.
+
+   - Displays the first 10 rows of the dataset for an initial view of the data.
+
+
+2. **Feature and Target Selection**:
+
+   ```python
+
+   X = dataset.iloc[:,:-1].values
+
+   y = dataset.iloc[:,-1].values
+
+   ```
+
+   - `X` represents the feature variables (all columns except the last one).
+
+   - `y` represents the target variable (the last column in the dataset, assumed to be the sales value to predict).
+
+
+3. **Train-Test Split**:
+
+   ```python
+
+   from sklearn.model_selection import train_test_split
+
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+   ```
+
+   - Splits the dataset into training and test sets, with 80% of the data used for training and 20% for testing. The `random_state` parameter ensures reproducibility of results.
+
+
+4. **Model Initialization**:
+
+   ```python
+
+   from sklearn.linear_model import LinearRegression
+
+   model = LinearRegression()
+
+   ```
+
+   - Imports the `LinearRegression` class from `sklearn.linear_model` and creates an instance called `model`.
+
+
+5. **Model Training**:
+
+   ```python
+
+   model.fit(X_train, y_train)
+
+   ```
+
+   - Fits the linear regression model using the training data (`X_train` and `y_train`).
+
+
+6. **Making Predictions**:
+
+   ```python
+
+   y_pred = model.predict(X_test)
+
+   ```
+
+   - Predicts the target variable values (`y`) for the test set (`X_test`), storing the results in `y_pred`.
+
+
+7. **Single Prediction Example**:
+
+   ```python
+
+   model.predict([[30, 95.7, 1, 2, 1, 1, 1]])
+
+   ```
+
+   - Attempts a single prediction using specific feature values (e.g., `30, 95.7, 1, 2, 1, 1, 1`), which may correspond to specific sales-related features like customer age, product type, or location.
+
+
+8. **Model Evaluation**:
+
+   ```python
+
+   from sklearn.metrics import r2_score
+
+   r2 = r2_score(y_test, y_pred)
+
+   ```
+
+   - Calculates the R-squared (R²) score for the model’s predictions, indicating how well the model explains the variance in the target variable.
+
+
+9. **Adjusted R-squared Calculation**:
+
+   ```python
+
+   k = X_test.shape[1]
+
+   n = X_test.shape[0]
+
+   adj_r2 = 1 - (1 - r2) * (n - 1) / (n - k - 1)
+
+   ```
+
+   - Computes the Adjusted R-squared, which adjusts the R² score based on the number of features (`k`) and observations (`n`), providing a more accurate measure of model performance, especially when multiple features are used.
+
+
+### Logistic Regression
+
+This performs a logistic regression analysis on a breast cancer dataset. Here's a breakdown of each step:
+
+
+1. **Data Loading and Preview**:
+
+   ```python
+
+   import pandas as pd
+
+   dataset = pd.read_csv('breast cancer data.csv')
+
+   dataset.head(10)
+
+   ```
+
+   - The Pandas library is imported to handle data. The dataset, named "breast cancer data.csv," is loaded into a DataFrame called `dataset`.
+
+   - The first 10 rows of the dataset are displayed to give an overview of the data.
+
+
+2. **Feature and Target Selection**:
+
+   ```python
+
+   X = dataset.iloc[:,1:].values
+
+   y = dataset.iloc[:,0].values
+
+   ```
+
+   - `X` represents the feature variables (all columns except the first one).
+
+   - `y` represents the target variable (the first column), assumed to be the binary classification target (e.g., malignant or benign).
+
+
+3. **Train-Test Split**:
+
+   ```python
+
+   from sklearn.model_selection import train_test_split
+
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+   ```
+
+   - Splits the dataset into training and testing sets, with 80% of the data used for training and 20% for testing. Setting `random_state` ensures reproducibility of the split.
+
+
+4. **Data Standardization**:
+
+   ```python
+
+   from sklearn.preprocessing import StandardScaler
+
+   sc = StandardScaler()
+
+   X_train = sc.fit_transform(X_train)
+
+   ```
+
+   - Standardizes the features in `X_train` to have a mean of 0 and a standard deviation of 1. Standardization is helpful in logistic regression to improve model performance and convergence.
+
+
+5. **Model Initialization**:
+
+   ```python
+
+   from sklearn.linear_model import LogisticRegression
+
+   model = LogisticRegression(random_state=0)
+
+   ```
+
+   - Imports `LogisticRegression` from `sklearn.linear_model` and initializes a logistic regression model named `model`.
+
+
+6. **Model Training**:
+
+   ```python
+
+   model.fit(X_train, y_train)
+
+   ```
+
+   - Fits the logistic regression model on the standardized training data, learning the relationships between `X_train` and `y_train`.
+
+
+7. **Making Predictions**:
+
+   ```python
+
+   y_pred = model.predict(sc.transform(X_test))
+
+   ```
+
+   - Predicts the target variable for the test set (`X_test`), storing the predictions in `y_pred`.
+
+
+8. **Single Prediction Example**:
+
+   ```python
+
+   model.predict(sc.transform([[17.99,10.38,122.8,1001,0.1184,...,0.1189,]]))
+
+   ```
+
+   - Attempts a single prediction using specific feature values, which may correspond to individual cell characteristics measured in breast cancer data.
+
+
+9. **Confusion Matrix and Visualization**:
+
+   ```python
+
+   from sklearn.metrics import confusion_matrix
+
+   confusion_matrix(y_test, y_pred)
+
+   ```
+
+   - Generates a confusion matrix, providing insight into the model’s classification accuracy by comparing actual vs. predicted values.
+
+
+   ```python
+
+   import matplotlib.pyplot as plt
+
+   import seaborn as sns
+
+   cm = confusion_matrix(y_test, y_pred)
+
+   plt.figure(figsize=(6, 4))
+
+   sns.heatmap(cm, annot=True, fmt='d', cmap='Reds', cbar=False)
+
+   plt.xlabel("Predicted Labels")
+
+   plt.ylabel("True Labels")
+
+   plt.title("Confusion Matrix")
+
+   plt.show()
+
+   ```
+
+  - This code visualizes the confusion matrix using a heatmap, making it easier to interpret model performance.
+
+
+10. **Accuracy Calculation**:
+
+    ```python
+
+    (65+45)/(65+45+2+2)
+
+    ```
+
+    - Manually calculates the accuracy score from confusion matrix values, showing the proportion of correct predictions out of total predictions.
+
+
+11. **Automated Accuracy Score**:
+
+    ```python
+
+    from sklearn.metrics import accuracy_score
+
+    accuracy_score(y_test, y_pred)
+
+    ```
+
+    - Uses `accuracy_score` from `sklearn.metrics` to calculate the model’s accuracy automatically, verifying the manual calculation.
+
