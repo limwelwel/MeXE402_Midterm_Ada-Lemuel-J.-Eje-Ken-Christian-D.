@@ -459,11 +459,14 @@ These are potential predictors or factors that may influence sales:
 - **TERRITORY:** Customer location and region can also impact sales.
 - **DEALSIZE:** Deal characteristics that might affect sales.
 
-**Table: Model Performance for Linear Regression**
+<h3 align="center">Table: Model Performance for Linear Regression</h3>
+<div align="center">
+
 | Metric          | Value           |
 |-----------------|-----------------|
 | R-squared       | 0.8269          |
 | Adjusted        | 0.8247          |
+</div>
 
 1. **R-Squared Value**: 0.8269 – This indicates that about 82.7% of the variance in sales is explained by the model.
 2. **Adjusted R-Squared Value**: 0.8247 – This adjusted metric accounts for the number of predictors, showing a similar strength of the model.
