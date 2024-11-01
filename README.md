@@ -175,23 +175,11 @@ This dataset is commonly used for evaluating classification algorithms, especial
 - **Interpretation:**  
    - Discuss the logistic regression model's ability to classify tumors as benign or malignant, and assess the importance of features in influencing the outcome.
 
-## IV.
-
-<hr>
-<p align="center">
-  <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
-DRAFT ELECTIVES
-
-IV. DOCUMENTATION
-
-
-METHODOLOGY
-
+## IV. Documentation
+## IV.I. Methodology
 
 ### Linear Regression
-
-This performs a linear regression analysis on a sales dataset. Here's a breakdown of each step:
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This performs a linear regression analysis on a sales dataset. Here's a breakdown of each step:
 
 1. **Data Loading and Preview**:
 
@@ -206,9 +194,7 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    ```
 
    - Imports the Pandas library and loads a CSV file named "sales data.csv" into a DataFrame named `dataset`.
-
    - Displays the first 10 rows of the dataset for an initial view of the data.
-
 
 2. **Feature and Target Selection**:
 
@@ -221,9 +207,7 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    ```
 
    - `X` represents the feature variables (all columns except the last one).
-
    - `y` represents the target variable (the last column in the dataset, assumed to be the sales value to predict).
-
 
 3. **Train-Test Split**:
 
@@ -237,7 +221,6 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
 
    - Splits the dataset into training and test sets, with 80% of the data used for training and 20% for testing. The `random_state` parameter ensures reproducibility of results.
 
-
 4. **Model Initialization**:
 
    ```python
@@ -247,9 +230,7 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    model = LinearRegression()
 
    ```
-
    - Imports the `LinearRegression` class from `sklearn.linear_model` and creates an instance called `model`.
-
 
 5. **Model Training**:
 
@@ -261,7 +242,6 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
 
    - Fits the linear regression model using the training data (`X_train` and `y_train`).
 
-
 6. **Making Predictions**:
 
    ```python
@@ -271,7 +251,6 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    ```
 
    - Predicts the target variable values (`y`) for the test set (`X_test`), storing the results in `y_pred`.
-
 
 7. **Single Prediction Example**:
 
@@ -283,7 +262,6 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
 
    - Attempts a single prediction using specific feature values (e.g., `30, 95.7, 1, 2, 1, 1, 1`), which may correspond to specific sales-related features like customer age, product type, or location.
 
-
 8. **Model Evaluation**:
 
    ```python
@@ -293,9 +271,7 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    r2 = r2_score(y_test, y_pred)
 
    ```
-
    - Calculates the R-squared (R²) score for the model’s predictions, indicating how well the model explains the variance in the target variable.
-
 
 9. **Adjusted R-squared Calculation**:
 
@@ -308,14 +284,11 @@ This performs a linear regression analysis on a sales dataset. Here's a breakdow
    adj_r2 = 1 - (1 - r2) * (n - 1) / (n - k - 1)
 
    ```
-
    - Computes the Adjusted R-squared, which adjusts the R² score based on the number of features (`k`) and observations (`n`), providing a more accurate measure of model performance, especially when multiple features are used.
 
 
 ### Logistic Regression
-
-This performs a logistic regression analysis on a breast cancer dataset. Here's a breakdown of each step:
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This performs a logistic regression analysis on a breast cancer dataset. Here's a breakdown of each step:
 
 1. **Data Loading and Preview**:
 
@@ -330,9 +303,7 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    ```
 
    - The Pandas library is imported to handle data. The dataset, named "breast cancer data.csv," is loaded into a DataFrame called `dataset`.
-
    - The first 10 rows of the dataset are displayed to give an overview of the data.
-
 
 2. **Feature and Target Selection**:
 
@@ -345,9 +316,7 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    ```
 
    - `X` represents the feature variables (all columns except the first one).
-
    - `y` represents the target variable (the first column), assumed to be the binary classification target (e.g., malignant or benign).
-
 
 3. **Train-Test Split**:
 
@@ -358,9 +327,7 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
    ```
-
    - Splits the dataset into training and testing sets, with 80% of the data used for training and 20% for testing. Setting `random_state` ensures reproducibility of the split.
-
 
 4. **Data Standardization**:
 
@@ -376,7 +343,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
 
    - Standardizes the features in `X_train` to have a mean of 0 and a standard deviation of 1. Standardization is helpful in logistic regression to improve model performance and convergence.
 
-
 5. **Model Initialization**:
 
    ```python
@@ -389,7 +355,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
 
    - Imports `LogisticRegression` from `sklearn.linear_model` and initializes a logistic regression model named `model`.
 
-
 6. **Model Training**:
 
    ```python
@@ -399,7 +364,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    ```
 
    - Fits the logistic regression model on the standardized training data, learning the relationships between `X_train` and `y_train`.
-
 
 7. **Making Predictions**:
 
@@ -411,7 +375,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
 
    - Predicts the target variable for the test set (`X_test`), storing the predictions in `y_pred`.
 
-
 8. **Single Prediction Example**:
 
    ```python
@@ -421,7 +384,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    ```
 
    - Attempts a single prediction using specific feature values, which may correspond to individual cell characteristics measured in breast cancer data.
-
 
 9. **Confusion Matrix and Visualization**:
 
@@ -457,9 +419,7 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
    plt.show()
 
    ```
-
-  - This code visualizes the confusion matrix using a heatmap, making it easier to interpret model performance.
-
+    - This code visualizes the confusion matrix using a heatmap, making it easier to interpret model performance.
 
 10. **Accuracy Calculation**:
 
@@ -470,7 +430,6 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
     ```
 
     - Manually calculates the accuracy score from confusion matrix values, showing the proportion of correct predictions out of total predictions.
-
 
 11. **Automated Accuracy Score**:
 
@@ -483,4 +442,12 @@ This performs a logistic regression analysis on a breast cancer dataset. Here's 
     ```
 
     - Uses `accuracy_score` from `sklearn.metrics` to calculate the model’s accuracy automatically, verifying the manual calculation.
+
+## IV.II. Results
+## IV.III. Discussion
+
+    <hr>
+<p align="center">
+  <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
+DRAFT ELECTIVES
 
