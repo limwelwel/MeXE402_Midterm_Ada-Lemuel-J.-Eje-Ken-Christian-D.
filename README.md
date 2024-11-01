@@ -444,7 +444,7 @@ This dataset is commonly used for evaluating classification algorithms, especial
     - Uses `accuracy_score` from `sklearn.metrics` to calculate the model’s accuracy automatically, verifying the manual calculation.
 
 ## IV.II. Results
-#### Linear Regression 
+### Linear Regression 
 
 #### Dependent Variable
 - **SALES:** Typically, the primary variable of interest in sales data as it reflects the revenue generated.
@@ -468,7 +468,7 @@ These are potential predictors or factors that may influence sales:
 1. **R-Squared Value**: 0.8269 – This indicates that about 82.7% of the variance in sales is explained by the model.
 2. **Adjusted R-Squared Value**: 0.8247 – This adjusted metric accounts for the number of predictors, showing a similar strength of the model.
 
-#### Logistic Regression 
+### Logistic Regression 
 
 **Visualization of Confusion Matrix**: The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
 
