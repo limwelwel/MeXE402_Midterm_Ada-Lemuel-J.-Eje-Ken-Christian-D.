@@ -458,7 +458,7 @@ These are potential predictors or factors that may influence sales:
 - **PRODUCTLINE:** Identifiers that help segment by product type.
 - **TERRITORY:** Customer location and region can also impact sales.
 - **DEALSIZE:** Deal characteristics that might affect sales.
-- 
+
 **Table: Model Performance for Linear Regression**
 | Metric          | Value           |
 |-----------------|-----------------|
