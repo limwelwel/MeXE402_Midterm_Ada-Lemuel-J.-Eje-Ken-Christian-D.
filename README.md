@@ -472,9 +472,9 @@ These are potential predictors or factors that may influence sales:
 
 **Visualization of Confusion Matrix**: The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
 
-![CM](https://github.com/user-attachments/assets/f9da60b2-3ab5-4bba-8249-98b22edc1bb7)
-
-
+<p align="center">
+<img src="https://github.com/limwelwel/PICTURES-AND-GIF/blob/86241988a48fe7f73e25943c3c9f26fdff56d492/CM.png"  height="400px"/> 
+  
 ## IV.III. Discussion
 #### Comparison of Linear and Logistic Regression Results
 - **Prediction vs. Classification**: The linear regression model focuses on predicting continuous values, whereas logistic regression provides binary classifications. Linear regression helped identify factors influencing sales, while logistic regression focused on determining the malignancy of tumors.
