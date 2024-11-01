@@ -444,10 +444,35 @@ This dataset is commonly used for evaluating classification algorithms, especial
     - Uses `accuracy_score` from `sklearn.metrics` to calculate the model’s accuracy automatically, verifying the manual calculation.
 
 ## IV.II. Results
-## IV.III. Discussion
+#### Linear Regression 
 
-    <hr>
+**Table: Model Performance for Linear Regression**
+| Metric          | Value           |
+|-----------------|-----------------|
+| R-squared       | 0.8269          |
+| Adjusted        | 0.8247          |
+
+1. **R-Squared Value**: 0.8269 – This indicates that about 82.7% of the variance in sales is explained by the model.
+2. **Adjusted R-Squared Value**: 0.8247 – This adjusted metric accounts for the number of predictors, showing a similar strength of the model.
+
+#### Logistic Regression 
+
+**Visualization of Confusion Matrix**: The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
+![CM](https://github.com/user-attachments/assets/f9da60b2-3ab5-4bba-8249-98b22edc1bb7)
+
+
+## IV.III. Discussion
+#### Comparison of Linear and Logistic Regression Results
+- **Prediction vs. Classification**: The linear regression model focuses on predicting continuous values, whereas logistic regression provides binary classifications. Linear regression helped identify factors influencing sales, while logistic regression focused on determining the malignancy of tumors.
+- **Evaluation Metrics**: R-squared and MSE for linear regression offer insight into prediction accuracy, while accuracy, precision, and recall for logistic regression provide details on classification performance.
+- **Strengths and Limitations**:
+  - *Linear Regression*: Effective in revealing correlations among sales features. However, it may underperform with non-linear relationships or with significant outliers.
+  - *Logistic Regression*: Provides probability estimates for classification but may be limited in handling multi-class problems or imbalanced data without adjustments.
+
+#### Limitations and Future Recommendations
+- **Data Limitations**: Both models’ performance depends heavily on data quality and feature selection. Additional feature engineering or regularization could improve model robustness.
+- **Model Choice**: Exploring advanced techniques, like polynomial regression for sales data or more complex classifiers (e.g., decision trees) for breast cancer data, may enhance predictions. 
+<hr>
 <p align="center">
   <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
-DRAFT ELECTIVES
 
