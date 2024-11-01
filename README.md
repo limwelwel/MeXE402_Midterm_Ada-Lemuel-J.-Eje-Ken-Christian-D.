@@ -446,6 +446,19 @@ This dataset is commonly used for evaluating classification algorithms, especial
 ## IV.II. Results
 #### Linear Regression 
 
+#### Dependent Variable
+- **SALES:** Typically, the primary variable of interest in sales data as it reflects the revenue generated.
+
+#### Independent Variables
+These are potential predictors or factors that may influence sales:
+- **QUANTITYORDERED:** Number of items ordered.
+- **PRICEEACH:** Price per item..
+- **STATUS:** Order status, such as "Shipped" or "Cancelled."
+- **MONTH_ID:** Time-related variables that can be used to identify trends across different periods.
+- **PRODUCTLINE:** Identifiers that help segment by product type.
+- **TERRITORY:** Customer location and region can also impact sales.
+- **DEALSIZE:** Deal characteristics that might affect sales.
+- 
 **Table: Model Performance for Linear Regression**
 | Metric          | Value           |
 |-----------------|-----------------|
@@ -458,6 +471,7 @@ This dataset is commonly used for evaluating classification algorithms, especial
 #### Logistic Regression 
 
 **Visualization of Confusion Matrix**: The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
+
 ![CM](https://github.com/user-attachments/assets/f9da60b2-3ab5-4bba-8249-98b22edc1bb7)
 
 
