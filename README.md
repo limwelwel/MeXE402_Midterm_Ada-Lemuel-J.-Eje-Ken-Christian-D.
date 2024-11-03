@@ -471,13 +471,28 @@ These are potential predictors or factors that may influence sales:
 1. **R-Squared Value**: 0.8269 – This indicates that about 82.7% of the variance in sales is explained by the model.
 2. **Adjusted R-Squared Value**: 0.8247 – This adjusted metric accounts for the number of predictors, showing a similar strength of the model.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overall, the linear regression model for predicting sales shows strong predictive power, as evidenced by its high R-Squared value.
+
 ### Logistic Regression 
 
-**Visualization of Confusion Matrix**: The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
+**Accuraccy Score**: 0.9649122807017544
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A 96.5% accuracy on this dataset shows how frequently the model correctly identifies a tumor as benign or malignant.
 
 <p align="center">
 <img src="https://github.com/limwelwel/PICTURES-AND-GIF/blob/86241988a48fe7f73e25943c3c9f26fdff56d492/CM.png"  height="400px"/> 
-  
+
+**Visualization of Confusion Matrix** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The confusion matrix shows the distribution of true positives, true negatives, false positives, and false negatives.
+- **True Negatives**: 65 instances of class 0 were correctly classified as benign.
+- **False Positives**: 2 instances of class 0 were incorrectly classified as malignant.
+- **False Negatives**: 2 instances of class 1 were incorrectly classified as benign.
+- **True Positives**: 45 instances of class 1 were correctly classified as malignant
+
+<p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overall, logistic regression demonstrates the potential of machine learning in early cancer detection, emphasizing the importance of both accuracy and interpretability to aid early diagnosis and enhance patient outcomes.
+
 ## IV.III. Discussion
 #### Comparison of Linear and Logistic Regression Results
 - **Prediction vs. Classification**: The linear regression model focuses on predicting continuous values, whereas logistic regression provides binary classifications. Linear regression helped identify factors influencing sales, while logistic regression focused on determining the malignancy of tumors.
@@ -488,7 +503,16 @@ These are potential predictors or factors that may influence sales:
 
 #### Limitations and Future Recommendations
 - **Data Limitations**: Both models’ performance depends heavily on data quality and feature selection. Additional feature engineering or regularization could improve model robustness.
-- **Model Choice**: Exploring advanced techniques, like polynomial regression for sales data or more complex classifiers (e.g., decision trees) for breast cancer data, may enhance predictions. 
+- **Model Choice**: Exploring advanced techniques, like polynomial regression for sales data or more complex classifiers (e.g., decision trees) for breast cancer data, may enhance predictions.
+
+## V. Reference
+
+Sample sales data. (2016, November 24). Kaggle. https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+
+Breast Cancer Wisconsin (Diagnostic) data set. (2016, September 25). Kaggle. https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+
+Machine Learning Level 1 - Full course. (n.d.). https://online.fliphtml5.com/grdgl/qwmz/?fbclid=IwZXh0bgNhZW0CMTEAAR30T78sPLdMmXMmJrfEjfe9sKj_Ym89UfDi52XXEvXHr5QKp7_mV32hnVM_aem_kibmYzecAn36XK3xoNQ4mQ#p=68
+
 <hr>
 <p align="center">
   <img src=https://github.com/limwelwel/PICTURES-AND-GIF/blob/45690003adbaf80745de882b8ec46f450184efbc/midterm%20electives/2.png alt=Bsu style="height: 25px;">
